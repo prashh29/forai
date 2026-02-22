@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --accent:#38bdf8;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+      background:linear-gradient(180deg,#020617,#0f172a);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%}
+    .container{max-width:1100px;margin:auto;padding:20px}
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:24px;
+      padding:40px 0;
+      border-bottom:1px solid #1f2937;
+    }
+    .photo{
+      width:140px;height:140px;border-radius:50%;
+      background:#1f2937;
+      display:flex;align-items:center;justify-content:center;
+      font-size:14px;color:var(--muted);
+      flex-shrink:0;
+    }
+    .intro h1{font-size:2.2rem;margin-bottom:8px}
+    .intro p{color:var(--muted)}
+    nav{
+      margin-left:auto;
+      display:flex;gap:18px;flex-wrap:wrap;
+    }
+    nav a{font-weight:500}
+    section{padding:48px 0;border-bottom:1px solid #1f2937}
+    h2{font-size:1.6rem;margin-bottom:18px}
+    .card{
+      background:var(--card);
+      padding:20px;border-radius:14px;
+      box-shadow:0 0 0 1px #1f2937;
+      margin-bottom:16px;
+    }
+    .skills{
+      display:flex;flex-wrap:wrap;gap:10px
+    }
+    .skill{
+      background:#020617;
+      border:1px solid #1f2937;
+      padding:8px 12px;border-radius:999px;
+      font-size:14px;color:var(--muted);
+    }
+    footer{
+      text-align:center;
+      padding:28px 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+    @media (max-width:700px){
+      header{flex-direction:column;align-items:flex-start}
+      nav{margin-left:0}
+      .intro h1{font-size:1.8rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo">Photo</div>
+      <div class="intro">
+        <h1>Your Name</h1>
+        <p>Short professional tagline or summary goes here.</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          Write a concise professional summary based on your resume.
+          Highlight your experience, interests, and career goals.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <div class="skill">Skill One</div>
+        <div class="skill">Skill Two</div>
+        <div class="skill">Skill Three</div>
+        <div class="skill">Skill Four</div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Job Title — Company</h3>
+        <p class="muted">Dates</p>
+        <p>
+          Key responsibilities and achievements. Use bullet-like sentences
+          to summarize impact and work done.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Previous Role — Company</h3>
+        <p>Details about your work and accomplishments.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Project Name</h3>
+        <p>Description of the project, technologies used, and results.</p>
+        <p><a href="#">Project Link</a> | <a href="#">Source Code</a></p>
+      </div>
+      <div class="card">
+        <h3>Another Project</h3>
+        <p>Short explanation of what it does and why it matters.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: your@email.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+        <p>
+          <a href="#">LinkedIn</a> |
+          <a href="#">GitHub</a> |
+          <a href="#">Portfolio</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Your Name. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
